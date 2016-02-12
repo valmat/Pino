@@ -1,6 +1,6 @@
 /*
  *
- * Pin.h - is zero-cost C++ wrapper for native arduino pin-manange functions which facilitates using its
+ * Pino - is zero-cost C++ wrapper for native arduino pin-manange functions which facilitates using its
  * Created by Valeriy V Dmitriev aka Valmat. December 10, 2015.
  * Released into the public domain.
  *
