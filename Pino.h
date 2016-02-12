@@ -73,25 +73,25 @@ public:
     }
 
     // Reads the value from the current analog pin
-    int read() const
+    uint16_t read() const
     {
         return analogRead(_pin);
     }
 
     // Reads the value from the current analog pin and Re-maps its to range [toLow, toHigh]
-    long read(long toLow, long toHigh) const
+    int32_t read(int32_t toLow, int32_t toHigh) const
     {
         return map(analogRead(_pin), LOW, HIGH, toLow, toHigh);;
     }
 
     // Writes an analog value (PWM wave) to the pin
-    void write(int value) const
+    void write(uint8_t value) const
     {
         analogWrite(_pin, value);
     }
 
     // Generates a square wave of the specified frequency (and 50% duty cycle) on a pin
-    void tone(unsigned int frequency, unsigned long duration = 0) const
+    void tone(uint16_t frequency, uint32_t duration = 0) const
     {
         ::tone(_pin, frequency, duration);
     }
@@ -103,21 +103,21 @@ public:
     }
 
     // Reads a pulse HIGH on the pin.
-    unsigned long pulseInOn(unsigned long timeout) const
+    uint32_t pulseInOn(uint32_t timeout) const
     {
         return pulseIn(_pin, HIGH, timeout);
     }
-    unsigned long pulseInOn() const
+    uint32_t pulseInOn() const
     {
         return pulseIn(_pin, HIGH);
     }
 
     // // Reads a pulse HIGH on the pin.
-    unsigned long pulseInOff(unsigned long timeout) const
+    uint32_t pulseInOff(uint32_t timeout) const
     {
         return pulseIn(_pin, LOW, timeout);
     }
-    unsigned long pulseInOff() const
+    uint32_t pulseInOff() const
     {
         return pulseIn(_pin, LOW);
     }
