@@ -169,9 +169,6 @@ public:
         return _pin;
     }
 
-
 private:
-    uint8_t _pin;
+    const uint8_t _pin;
 };
-
-//#endif Pin_h

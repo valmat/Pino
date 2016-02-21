@@ -41,11 +41,11 @@ void setup() {}
 void loop() {
   // read the value from the sensor:
   int sensorValue = sensor.read();
-  // turn the ledPin on
+  // turn the led on
   led.on();
   // stop the program for <sensorValue> milliseconds:
   delay(sensorValue);
-  // turn the ledPin off:
+  // turn the led off:
   led.off();;
   // stop the program for for <sensorValue> milliseconds:
   delay(sensorValue);
