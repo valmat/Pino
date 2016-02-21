@@ -1,6 +1,6 @@
-Pino -- is the Arduino pins control library
+Pino — is the Arduino pins control library
 =======
-Actually Pino is a very lightweight zero-cost header-only wrapper over the native Arduino functions. Which makes it easier to writing and reading the code for the Arduino.
+Actually Pino is a very lightweight zero-cost, header-only wrapper over the native Arduino functions. Which makes it easier to writing and reading a code for the Arduino.
 
 A couple of simple examples
 --------
@@ -48,6 +48,7 @@ void loop() {
 }
 ```
 
-For more examples, see the [examples] directory
+For more examples, see the [examples](examples) directory
+
 
 ![Pino](/Pino.png?raw=true)
