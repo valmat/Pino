@@ -1,0 +1,37 @@
+#######################################
+# Syntax Coloring Map For Time
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+Pino	KEYWORD1
+Mode	KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+mode	KEYWORD2
+on	KEYWORD2
+off	KEYWORD2
+turn	KEYWORD2
+isOn	KEYWORD2
+read	KEYWORD2
+write	KEYWORD2
+tone	KEYWORD2
+noTone	KEYWORD2
+pulseInOn	KEYWORD2
+pulseInOff	KEYWORD2
+shiftOut	KEYWORD2
+shiftOutRe	KEYWORD2
+shiftIn	KEYWORD2
+shiftInRe	KEYWORD2
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+in	LITERAL1
+out	LITERAL1
+up	LITERAL1
