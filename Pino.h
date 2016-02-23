@@ -81,7 +81,7 @@ public:
     // Reads the value from the current analog pin and Re-maps its to range [toLow, toHigh]
     int32_t read(int32_t toLow, int32_t toHigh) const
     {
-        return map(analogRead(_pin), LOW, HIGH, toLow, toHigh);;
+        return map(analogRead(_pin), LOW, HIGH, toLow, toHigh);
     }
 
     // Writes an analog value (PWM wave) to the pin
