@@ -70,9 +70,10 @@ LiquidCrystal lcd(rs, e, db4, db5, db6,  db7);
 ```
 It looks strange, but you can even write `digitalWrite(pin, HIGH);`, where `pin` is object of Pino. Although in this case, `pin.on()` looks much clearer.
 
-The examples above are possible because Pino object can be implicitly converted to numeric types and back
+The examples above are possible because Pino object can be implicitly converted to numeric types and back.
 
-at last. When you need to set the pin mode, you can specify the mode in initialization
+
+At last. When you need to set the pin mode, you can specify the mode in initialization
 ```c
 Pino led(13, Pino::Mode::out);
 ``` 
