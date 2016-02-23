@@ -4,6 +4,26 @@ Actually Pino is a very lightweight zero-cost, header-only wrapper over the nati
 
 ### A couple of simple examples
 
+Using the Pino library:
+```c
+#include <Pino.h>
+
+Pino sensor(A0);                  // select the input pin for the potentiometer
+Pino led(13, Pino::Mode::out);    // select the pin for the LED
+
+void setup() {}
+
+void loop() {
+  int sensorValue = sensor.read();
+  led.on();
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  led.off();;
+  // stop the program for for <sensorValue> milliseconds:
+  delay(sensorValue);
+}
+```
+
 [Native arduino functions](https://www.arduino.cc/en/Tutorial/AnalogInput):
 ```c
 int sensorPin = A0;    // select the input pin for the potentiometer
@@ -24,25 +44,6 @@ void loop() {
   delay(sensorValue);
   // turn the ledPin off:
   digitalWrite(ledPin, LOW);
-  // stop the program for for <sensorValue> milliseconds:
-  delay(sensorValue);
-}
-```
-Using the Pino library:
-```c
-#include <Pino.h>
-
-Pino sensor(A0);                  // select the input pin for the potentiometer
-Pino led(13, Pino::Mode::out);    // select the pin for the LED
-
-void setup() {}
-
-void loop() {
-  int sensorValue = sensor.read();
-  led.on();
-  // stop the program for <sensorValue> milliseconds:
-  delay(sensorValue);
-  led.off();;
   // stop the program for for <sensorValue> milliseconds:
   delay(sensorValue);
 }
