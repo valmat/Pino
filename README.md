@@ -116,4 +116,4 @@ The table below shows the corresponding class methods to native functions:
 More details see [surce code](Pino.h)
 
 
-![Pino](/Pino.png?raw=true)
+![Pino](/extras/Pino.png?raw=true)
