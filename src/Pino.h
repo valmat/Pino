@@ -31,11 +31,13 @@ public:
     // Constructor
     Pino(uint8_t pinNom) : _pin(pinNom) {}
 
-    // Copy constructor
+    // Copy & Move constructors
     Pino( const Pino& ) = default;
-
-    // Move constructor
-    Pino ( Pino && ) = default;
+    Pino( Pino && ) = default;
+    
+    // Copy & Move assigments
+    Pino& operator=(const Pino &) = default;
+    Pino& operator=(Pino &&) = default;
 
     // initialize a pin as mode.
     void mode(Mode mode) const
@@ -170,5 +172,5 @@ public:
     }
 
 private:
-    const uint8_t _pin;
+    uint8_t _pin;
 };
