@@ -14,11 +14,11 @@ Pino led(13, Pino::Mode::out);    // select the pin for the LED
 void setup() {}
 
 void loop() {
-  int sensorValue = sensor.read();
+  auto sensorValue = sensor.read();
   led.on();
   // stop the program for <sensorValue> milliseconds:
   delay(sensorValue);
-  led.off();;
+  led.off();
   // stop the program for for <sensorValue> milliseconds:
   delay(sensorValue);
 }
@@ -113,7 +113,7 @@ The table below shows the corresponding class methods to native functions:
 | `pin.shiftIn(clockPin)`      |`shiftIn(pin, clockPin, MSBFIRST)`|
 | `pin.shiftInRe(clockPin)`      |`shiftIn(pin, clockPin, LSBFIRST)`|
 
-More details see [surce code](Pino.h)
+More details see [surce code](src/Pino.h)
 
 
 ![Pino](/extras/Pino.png?raw=true)

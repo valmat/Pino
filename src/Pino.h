@@ -98,7 +98,8 @@ public:
         ::tone(_pin, frequency, duration);
     }
 
-    // Stops the generation of a square wave triggered by tone(). Has no effect if no tone is being generated.
+    // Stops the generation of a square wave triggered by tone().
+    // Has no effect if no tone is being generated.
     void noTone() const
     {
         ::noTone(_pin);
@@ -107,21 +108,21 @@ public:
     // Reads a pulse HIGH on the pin.
     uint32_t pulseInOn(uint32_t timeout) const
     {
-        return pulseIn(_pin, HIGH, timeout);
+        return ::pulseIn(_pin, HIGH, timeout);
     }
     uint32_t pulseInOn() const
     {
-        return pulseIn(_pin, HIGH);
+        return ::pulseIn(_pin, HIGH);
     }
 
-    // // Reads a pulse HIGH on the pin.
+    // Reads a pulse HIGH on the pin.
     uint32_t pulseInOff(uint32_t timeout) const
     {
-        return pulseIn(_pin, LOW, timeout);
+        return ::pulseIn(_pin, LOW, timeout);
     }
     uint32_t pulseInOff() const
     {
-        return pulseIn(_pin, LOW);
+        return ::pulseIn(_pin, LOW);
     }
 
     // Shifts out a byte of data one bit at a time
@@ -166,6 +167,7 @@ public:
         return ::shiftIn(_pin, clockPin._pin, LSBFIRST);
     }
 
+    // Cast to a number
     operator uint8_t () const
     {
         return _pin;
