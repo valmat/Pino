@@ -1,8 +1,12 @@
 /*
  *
- * Pino - is zero-cost C++ wrapper for native arduino pin-manange functions which facilitates using its
+ * Pino - is zero-cost C++ wrapper for native arduino pin-control functions which facilitates using its
  * Created by Valeriy V Dmitriev aka Valmat. December 10, 2015.
- * Released into the public domain.
+ * Released by the MIT license.
+ *
+ *  @author   Valeriy V Dmitriev aka valmat <ufabiz@gmail.com>
+ *  @licenses MIT https://github.com/valmat/Pino/blob/master/LICENSE
+ *  @repo     https://github.com/valmat/Pino
  *
  */
 
