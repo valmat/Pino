@@ -1,6 +1,6 @@
-# Pino — is the Arduino pins control library
+# Pino — is an Arduino pins control library
 
-Actually Pino is a very lightweight zero-cost, header-only wrapper over the native Arduino functions. Which makes it easier to writing and reading a code for the Arduino.
+Actually Pino is a very lightweight zero-cost, header-only wrapper over the native Arduino functions. It makes easier to writing and reading a code for an Arduino sketches and libraries.
 
 ### A couple of simple examples
 
@@ -114,6 +114,9 @@ The table below shows the corresponding class methods to native functions:
 | `pin.shiftInRe(clockPin)`      |`shiftIn(pin, clockPin, LSBFIRST)`|
 
 More details see [surce code](src/Pino.h)
+
+
+[The MIT License](LICENSE)
 
 
 ![Pino](/extras/Pino.png?raw=true)
